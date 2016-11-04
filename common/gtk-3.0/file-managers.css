@@ -1,0 +1,676 @@
+
+GtkFileChooserDialog .view,
+GtkFileChooserWidget .view,
+NemoWindow .view,
+MarlinViewWindow .view,
+NautilusWindow .view
+{
+	color: @filemanager_foreground;
+	background-color: @filemanager_background;
+}
+
+GtkFileChooserDialog .scrollbar .trough,
+GtkFileChooserWidget .scrollbar .trough,
+NemoWindow .scrollbar .trough,
+MarlinViewWindow .scrollbar .trough,
+NautilusWindow .scrollbar .trough
+{
+	background-color: transparent;
+}
+GtkFileChooserDialog .scrollbar:hover .trough,
+GtkFileChooserWidget .scrollbar:hover .trough,
+NemoWindow .scrollbar:hover .trough,
+MarlinViewWindow .scrollbar:hover .trough,
+NautilusWindow .scrollbar:hover .trough
+{
+	background-color: alpha(@filemanager_foreground, 0.2);
+}
+
+TerminalWindow .notebook.header.top,
+TerminalWindow .notebook.header.bottom,
+TerminalWindow .notebook.header.right,
+TerminalWindow .notebook.header.left
+{
+	box-shadow: none;
+}
+NautilusWindow .notebook tab.reorderable-page.top:hover,
+NautilusWindow .notebook tab.reorderable-page.top.prelight-page,
+NautilusWindow .notebook tab.top:hover,
+NautilusWindow .notebook tab.top.prelight-page
+{
+	border-bottom: 1px solid @filemanager_background;
+	background-color: mix(@filemanager_background, @bar_background, 0.2);
+}
+NautilusWindow .notebook.header { background-color: @bar_background; }
+NautilusWindow .notebook tab.reorderable-page.top:active,
+NautilusWindow .notebook tab.reorderable-page.top.active-page,
+NautilusWindow .notebook tab.reorderable-page.top.active-page:hover,
+NautilusWindow .notebook tab.top:active,
+NautilusWindow .notebook tab.top.active-page,
+NautilusWindow .notebook tab.top.active-page:hover
+{
+	background-color: @filemanager_background;
+	box-shadow: none;
+}
+NautilusWindow .notebook tab GtkLabel { color: rgba(170, 178, 194, 0.55); }
+
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover,
+NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:selected,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:active:hover,
+NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:active
+{
+	background-image: none;
+	background-color: @main_color;
+	color: @main_color_contrast;
+	outline-color: alpha(@main_color_contrast, 0.3);
+}
+
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button,
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover,
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:active,
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:checked,
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:insensitive
+{
+	border-radius: 0;
+	border-right-style: none;
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:first-child
+{
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:last-child
+{
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	border-right-style: solid;
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:only-child
+{
+	border-radius: 3px;
+	border-style: solid;
+}
+
+.nautilus-canvas-item { border-radius: 2px; }
+.nautilus-desktop.nautilus-canvas-item,
+.nemo-desktop.nemo-canvas-item
+{
+	color: @main_color_contrast;
+	text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+}
+.nautilus-desktop.nautilus-canvas-item:active,
+.nemo-desktop.nemo-canvas-item:active
+{
+	color: #5C616C;
+}
+.nautilus-desktop.nautilus-canvas-item:selected,
+.nemo-desktop.nemo-canvas-item:selected
+{
+	color: @main_color_contrast;
+}
+.nautilus-canvas-item.dim-label,
+.nautilus-canvas-item.label.separator,
+.header-bar .nautilus-canvas-item.subtitle,
+.nautilus-list-dim-label
+{
+	color: #A9ACB2;
+}
+.nautilus-canvas-item.dim-label:selected,
+.nautilus-canvas-item.label.separator:selected,
+.header-bar .nautilus-canvas-item.subtitle:selected,
+.nautilus-canvas-item.dim-label:selected:focus,
+.nautilus-canvas-item.label.separator:selected:focus,
+.header-bar .nautilus-canvas-item.subtitle:selected:focus,
+.nautilus-list-dim-label:selected,
+.nautilus-list-dim-label:selected:focus
+{
+	color: #DCEAF9;
+}
+
+NautilusNotebook.notebook tab
+{
+	border-width: 0;
+	border-style: solid;
+	border-color: transparent;
+	background-color: transparent;
+}
+
+NautilusQueryEditor .search-bar.toolbar,
+NautilusQueryEditor .search-bar.inline-toolbar
+{
+	padding: 5px;
+	box-shadow: none;
+	background-color: #CCD0D0;
+	border-color: #CCD0D0;
+}
+
+.nautilus-circular-button.image-button.button,
+.header-bar .nautilus-circular-button.button.titlebutton,
+.titlebar .nautilus-circular-button.button.titlebutton
+{
+	border-radius: 50%;
+	outline-radius: 50%;
+	padding: 8px;
+}
+
+NemoWindow .sidebar .frame { border-width: 0; }
+NemoWindow GtkSeparator.separator.horizontal,
+NemoWindow .sidebar GtkSeparator.horizontal.view.separator,
+.sidebar NemoWindow GtkSeparator.horizontal.view.separator
+{
+	color: #DCDFE3;
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button
+{
+	color: rgba(207, 218, 231, 0.8);
+	outline-color: rgba(207, 218, 231, 0.1);
+	border-color: rgba(21, 23, 28, 0.37);
+	background-color: rgba(95, 105, 127, 0.37);
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover
+{
+	background-color: rgba(134, 144, 165, 0.37);
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:active,
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:checked
+{
+	color: @main_color_contrast;
+	outline-color: alpha(@main_color_contrast, 0.3);
+	border-color: transparent;
+	background-color: @main_color;
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:insensitive
+{
+	color: rgba(207, 218, 231, 0.4);
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover:not(:checked):not(:active):not(:only-child):hover
+{
+	box-shadow: inset 1px 0 rgba(21, 23, 28, 0.37), 
+		inset -1px 0 rgba(21, 23, 28, 0.37);
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover:not(:checked):not(:active):not(:only-child):first-child:hover
+{
+	box-shadow: inset -1px 0 rgba(21, 23, 28, 0.37);
+}
+NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .button:hover:not(:checked):not(:active):not(:only-child):last-child:hover
+{
+	box-shadow: inset 1px 0 rgba(21, 23, 28, 0.37);
+}
+
+MarlinViewWindow *:selected,
+MarlinViewWindow *:selected:focus
+{
+	color: @main_color_contrast;
+	background-color: @main_color;
+	outline-color: transparent;
+}
+MarlinViewWindow GtkIconView.view:selected,
+MarlinViewWindow GtkIconView.view:selected:focus,
+MarlinViewWindow GtkIconView.view:selected:hover,
+MarlinViewWindow GtkIconView.view:selected:focus:hover
+{
+	background-color: transparent;
+}
+MarlinViewWindow FMListView,
+MarlinViewWindow FMColumnView
+{
+	outline-color: transparent;
+}
+
+.marlin-pathbar.pathbar
+{
+	border-radius: 3px;
+	padding-left: 4px;
+	padding-right: 4px;
+	color: rgba(207, 218, 231, 0.8);
+	border-color: rgba(21, 23, 28, 0.37);
+	background-image: linear-gradient(to bottom, rgba(95, 105, 127, 0.37));
+	background-color: transparent;
+}
+.marlin-pathbar.pathbar.image,
+.marlin-pathbar.pathbar.image:hover
+{
+	color: inherit;
+}
+.marlin-pathbar.pathbar:focus
+{
+	color: @main_color_contrast;
+	border-color: transparent;
+	background-image: linear-gradient(to bottom, @main_color);
+}
+.marlin-pathbar.pathbar:insensitive
+{
+	color: rgba(207, 218, 231, 0.35);
+	background-image: linear-gradient(to bottom, rgba(95, 105, 127, 0.22));
+}
+.marlin-pathbar.pathbar:active,
+.marlin-pathbar.pathbar:checked
+{
+	color: @main_color;
+}
+
+GtkFileChooserDialog *,
+NautilusWindow *,
+NemoWindow
+{
+	-GtkPaned-handle-size: 0;
+}
+GtkFileChooserDialog.csd.background,
+GtkFileChooserDialog .list.sidebar,
+NautilusWindow.csd.background,
+NautilusWindow .list.sidebar
+{
+	background-color: transparent;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar,
+NautilusWindow GtkPlacesSidebar.sidebar
+{
+	background-color: rgba(53, 57, 69, 0.95);
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-placeholder-row.list-row.activatable,
+NautilusWindow GtkPlacesSidebar.sidebar .sidebar-placeholder-row.list-row.activatable
+{
+	border: 1px solid @main_color;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row,
+NautilusWindow GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row
+{
+	background-color: rgba(75, 81, 98, 0.95);
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable
+{
+	border: none;
+	color: mix(@bar_foreground, gray, 0.24);
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable .sidebar-icon,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable .sidebar-icon
+{
+	color: rgba(186, 195, 207, 0.6);
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:hover,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:hover,
+NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup
+{
+	background-color: rgba(186, 195, 207, 0.15);
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:selected,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:active:hover,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:active
+{
+	background-image: none;
+	background-color: @main_color;
+	color: @main_color_contrast;
+	outline-color: alpha(@main_color_contrast, 0.3);
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected .sidebar-icon,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover .sidebar-icon,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:selected .sidebar-icon,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:active:hover .sidebar-icon,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup:active .sidebar-icon,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected .sidebar-icon,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:selected:hover .sidebar-icon,
+NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:selected .sidebar-icon,
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:active:hover .sidebar-icon,
+NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup:active .sidebar-icon
+{
+	color: inherit;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-button.button,
+NautilusWindow GtkPlacesSidebar.sidebar .sidebar-button.button
+{
+	color: @bar_button_foreground;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-button.button:hover,
+NautilusWindow GtkPlacesSidebar.sidebar .sidebar-button.button:hover
+{
+	color: @bar_button_foreground;
+	outline-color: alpha(@bar_button_foreground, 0.3);
+	border-color: rgba(26, 28, 34, 0.35);
+	background-color: rgba(119, 127, 151, 0.45);
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-button.button:active,
+NautilusWindow GtkPlacesSidebar.sidebar .sidebar-button.button:active
+{
+	background-clip: padding-box;
+	color: @main_color_contrast;
+	outline-color: alpha(@main_color_contrast, 0.3);
+	border-color: rgba(26, 28, 34, 0.35);
+	background-color: @main_color;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-button.button:not(:hover):not(:active) > GtkImage,
+NautilusWindow GtkPlacesSidebar.sidebar .sidebar-button.button:not(:hover):not(:active) > GtkImage
+{
+	opacity: 0.5;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .separator,
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .view.separator,
+NautilusWindow GtkPlacesSidebar.sidebar .separator,
+NautilusWindow GtkPlacesSidebar.sidebar .view.separator
+{
+	color: transparent;
+}
+GtkFileChooserDialog.maximized GtkPlacesSidebar.sidebar,
+NautilusWindow.maximized GtkPlacesSidebar.sidebar
+{
+	background-color: #2C2F3A;
+}
+
+NemoWindow GtkEventBox { background-color: @main_contrast_color; }
+
+NemoWindow.csd.background,
+NemoWindow .source-list,
+NemoWindow .source-list.view,
+NemoWindow .source-list.view:prelight,
+MarlinViewWindow.csd.background,
+MarlinViewWindow .source-list,
+MarlinViewWindow .source-list.view,
+MarlinViewWindow .source-list.view:prelight
+{
+	background-color: transparent;
+}
+NemoWindow .sidebar,
+NemoWindow .source-list.sidebar.view,
+MarlinViewWindow .sidebar,
+MarlinViewWindow .source-list.sidebar.view
+{
+	background-color: rgba(53, 57, 69, 0.95);
+}
+NemoWindow .sidebar .view,
+NemoWindow .sidebar row,
+NemoWindow .source-list.sidebar.view .view,
+NemoWindow .source-list.sidebar.view row,
+MarlinViewWindow .sidebar .view,
+MarlinViewWindow .sidebar row,
+MarlinViewWindow .source-list.sidebar.view .view,
+MarlinViewWindow .source-list.sidebar.view row
+{
+	background-color: transparent;
+	color: mix(@bar_foreground, gray, 0.24);
+}
+NemoWindow .sidebar .view.image,
+NemoWindow .sidebar row.image,
+NemoWindow .source-list.sidebar.view .view.image,
+NemoWindow .source-list.sidebar.view row.image,
+MarlinViewWindow .sidebar .view.image,
+MarlinViewWindow .sidebar row.image,
+MarlinViewWindow .source-list.sidebar.view .view.image,
+MarlinViewWindow .source-list.sidebar.view row.image
+{
+	color: rgba(186, 195, 207, 0.7);
+}
+NemoWindow .sidebar .view.cell:selected,
+NemoWindow .sidebar row.cell:selected,
+NemoWindow .source-list.sidebar.view .view.cell:selected,
+NemoWindow .source-list.sidebar.view row.cell:selected,
+MarlinViewWindow .sidebar .view.cell:selected,
+MarlinViewWindow .sidebar row.cell:selected,
+MarlinViewWindow .source-list.sidebar.view .view.cell:selected,
+MarlinViewWindow .source-list.sidebar.view row.cell:selected
+{
+	background-color: @main_color;
+	color: @main_color_contrast;
+}
+NemoWindow .sidebar.frame,
+NemoWindow .source-list.sidebar.view.frame,
+MarlinViewWindow .sidebar.frame,
+MarlinViewWindow .source-list.sidebar.view.frame
+{
+	color: mix(@bar_foreground, gray, 0.24);
+}
+NemoWindow .sidebar .separator,
+NemoWindow .sidebar .view.separator,
+NemoWindow .source-list.sidebar.view .separator,
+MarlinViewWindow .sidebar .separator,
+MarlinViewWindow .sidebar .sidebar.separator,
+MarlinViewWindow .sidebar .view.separator,
+MarlinViewWindow .source-list.sidebar.view .separator
+{
+	color: transparent;
+}
+NemoWindow.maximized .sidebar,
+MarlinViewWindow.maximized .sidebar
+{
+	background-color: #353945;
+}
+NemoWindow.background > GtkGrid > GtkPaned > .pane-separator,
+MarlinViewWindow.background > GtkBox > GtkPaned > .pane-separator
+{
+	background-color: rgba(53, 57, 69, 0.95);
+}
+
+NautilusWindow NautilusWindowSlot { background-color: @FFFFFF; }
+NautilusDesktopWindow NautilusWindowSlot { background-color: transparent; }
+
+GtkFileChooserDialog.background.csd,
+GtkFileChooserDialog.background
+{
+	background-color: @bar_background;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar { background-color: #3E424E; }
+GtkFileChooserDialog GtkPaned > .vertical > .horizontal { background-color: #F5F6F7; }
+GtkFileChooserDialog .dialog-vbox > .frame
+{
+	color: mix(@bar_foreground, gray, 0.24);
+	border-color: transparent;
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check,
+GtkFileChooserDialog .dialog-vbox > .frame .check
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), 
+		url("assets/checkbox-unchecked-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:insensitive,
+GtkFileChooserDialog .dialog-vbox > .frame .check:insensitive
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), 
+		url("assets/checkbox-unchecked-insensitive-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:inconsistent,
+GtkFileChooserDialog .dialog-vbox > .frame .check:inconsistent
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"),
+		url("assets/checkbox-mixed-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:inconsistent:insensitive,
+GtkFileChooserDialog .dialog-vbox > .frame .check:inconsistent:insensitive
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"),
+		url("assets/checkbox-mixed-insensitive-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:checked,
+GtkFileChooserDialog .dialog-vbox > .frame .check:checked
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"),
+		url("assets/checkbox-checked-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:checked:insensitive,
+GtkFileChooserDialog .dialog-vbox > .frame .check:checked:insensitive
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-insensitive-dark.png"),
+		url("assets/checkbox-checked-insensitive-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio,
+GtkFileChooserDialog .dialog-vbox > .frame .radio
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"),
+		url("assets/radio-unchecked-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:insensitive,
+GtkFileChooserDialog .dialog-vbox > .frame .radio:insensitive
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"),
+		url("assets/radio-unchecked-insensitive-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:inconsistent,
+GtkFileChooserDialog .dialog-vbox > .frame .radio:inconsistent
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"),
+		url("assets/radio-mixed-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:inconsistent:insensitive,
+GtkFileChooserDialog .dialog-vbox > .frame .radio:inconsistent:insensitive
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"),
+		url("assets/radio-mixed-insensitive-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:checked,
+GtkFileChooserDialog .dialog-vbox > .frame .radio:checked
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"),
+		url("assets/radio-checked-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:checked:insensitive,
+GtkFileChooserDialog .dialog-vbox > .frame .radio:checked:insensitive
+{
+	-gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"),
+		url("assets/radio-checked-insensitive-dark@2.png"));
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame
+{
+	background-color: transparent;
+	border: none;
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame GtkLabel,
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame GtkComboBox,
+GtkFileChooserDialog .dialog-vbox > .frame GtkLabel,
+GtkFileChooserDialog .dialog-vbox > .frame GtkComboBox
+{
+	color: mix(@bar_foreground, gray, 0.24);
+}
+
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .button,
+GtkFileChooserDialog .dialog-vbox > .frame .button,
+GtkFileChooserDialog .dialog-action-box .button
+{
+	color: @bar_button_foreground;
+	border: none;
+	outline-color: alpha(@bar_button_foreground, 0.3);
+	background-color: @bar_button_background;
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .button:hover,
+GtkFileChooserDialog .dialog-vbox > .frame .button:hover,
+GtkFileChooserDialog .dialog-action-box .button:hover
+{
+	color: @bar_button_foreground;
+	border: none;
+	outline-color: alpha(@bar_button_foreground, 0.3);
+	background-color: shade(@bar_button_background, 1.33);
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .button:active,
+GtkFileChooserDialog .dialog-vbox > .frame .button:active,
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .button:checked,
+GtkFileChooserDialog .dialog-vbox > .frame .button:checked,
+GtkFileChooserDialog .dialog-action-box .button:active,
+GtkFileChooserDialog .dialog-action-box .button:hover
+{
+	color: @main_color_contrast;
+	border: none;
+	outline-color: alpha(@main_color_contrast, 0.3);
+	background-color: @main_color;
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .button:insensitive,
+GtkFileChooserDialog .dialog-vbox > .frame .button:insensitive,
+GtkFileChooserDialog .dialog-action-box .button:insensitive
+{
+	opacity: 0.33;
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .entry,
+GtkFileChooserDialog .dialog-vbox > .frame .entry
+{
+	color: @bar_button_foreground;
+	border-color: rgba(26, 28, 34, 0.35);
+	background-image: linear-gradient(to bottom, rgba(102, 109, 132, 0.35));
+	background-color: transparent;
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .image.entry,
+GtkFileChooserDialog .dialog-vbox > .frame .image.entry,
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .image.entry:hover,
+GtkFileChooserDialog .dialog-vbox > .frame .image.entry:hover
+{
+	color: inherit;
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .entry:focus,
+GtkFileChooserDialog .dialog-vbox > .frame .entry:focus
+{
+	color: @main_color_contrast;
+	border-color: rgba(26, 28, 34, 0.35);
+	background-image: linear-gradient(to bottom, @main_color);
+}
+GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .entry:insensitive,
+GtkFileChooserDialog .dialog-vbox > .frame .entry:insensitive
+{
+	color: alpha(@bar_button_foreground, 0.55);
+	background-image: linear-gradient(to bottom, rgba(102, 109, 132, 0.2));
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider,
+MarlinViewWindow .sidebar .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider
+{
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+GtkFileChooserDialog .search-bar
+{
+	color: @bar_foreground;
+	background-color: @bar_background;
+	border: none;
+	box-shadow: none;
+}
+GtkFileChooserDialog *:nth-child(even) .search-bar
+{
+	color: @general_foreground;
+	background-color: @general_background;
+}
+
+GtkFileChooserButton .separator,
+GtkFileChooserButton .sidebar.separator,
+GtkFileChooserButton .sidebar .view.separator,
+.sidebar GtkFileChooserButton .view.separator,
+GtkFileChooserButton .separator.vertical,
+GtkFileChooserButton .sidebar .vertical.view.separator,
+.sidebar GtkFileChooserButton .vertical.view.separator
+{
+	-GtkWidget-wide-separators: true;
+}
+
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .trough,
+NemoWindow .sidebar .scrollbar .trough,
+NemoWindow .source-list.sidebar.view .scrollbar .trough,
+MarlinViewWindow .sidebar .scrollbar .trough,
+MarlinViewWindow .source-list.sidebar.view .scrollbar .trough
+{
+	background-color: transparent;
+	border: none;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider,
+NemoWindow .source-list.sidebar.view .scrollbar .slider,
+MarlinViewWindow .sidebar .scrollbar .slider,
+MarlinViewWindow .source-list.sidebar.view .scrollbar .slider
+{
+	background-color: rgba(231, 234, 238, 0.2);
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:hover,
+MarlinViewWindow .sidebar .scrollbar .slider:hover
+{
+	background-color: #F6F7F9;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:prelight:active,
+MarlinViewWindow .sidebar .scrollbar .slider:prelight:active
+{
+	background-color: @main_color;
+}
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .scrollbar .slider:insensitive,
+MarlinViewWindow .sidebar .scrollbar .slider:insensitive
+{
+	background-color: transparent;
+}
+NautilusWindow GtkPlacesSidebar.sidebar .scrollbar,
+NemoWindow GtkPlacesSidebar.sidebar .scrollbar
+{
+	opacity: 0.0;
+}
+
+

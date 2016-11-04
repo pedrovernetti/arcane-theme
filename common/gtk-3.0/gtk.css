@@ -1,0 +1,116 @@
+/* TODO:
+ *
+ * GTK-2.0
+ *   default-selected items in lists or tables background must be blue
+ *   menu panel must be black
+ *   scrollbars, progress bars and sliders must be padronized
+ *   use arc icons
+ * GTK-3.0
+ *   gedit print-preview toolbar
+ *   libreoffice toolbars must be less dark or Black
+ *   make unity launcher's background flat
+ *   incompatibility with papirus toolbar icons (too dark vs. too white)
+ *   unity launcher icons actions menu must be flat
+ *   opaque selection box
+ *   rhythmbox
+ *   mais espaço abaixo da barra de endereços do nautilus
+ *   firefox bar must be in default colors
+ *   bordas das extremidades das barras de endereço em botões
+ *   change loading icon
+ *   insensitive menu items must be a little ligher
+ *   buttons must be more "evident"
+ *   popover current item must be more noticeable
+ *   tabs close button colors
+ *   lists header's last column (last child) must have right-margin
+ * 
+ */
+
+/* COLORS */
+@define-color main_color			#5294E2;
+@define-color main_color_contrast		#FFFFFF;
+@define-color general_background		#EAECED;
+@define-color general_foreground		#5C616C;
+@define-color general_borders			#DCDFE3;
+@define-color button_background			#FBFBFC;
+@define-color button_foreground			#5C616C;
+@define-color menu_background			#29292E;
+@define-color menu_foreground			#CBC7C7;
+@define-color menu_borders			#29292E;
+@define-color content_background		#DDE0E0;
+@define-color content_foreground		#4C515C;
+@define-color content_borders			#DDE0E0;
+@define-color scrollbar_trough			#CCD0D0;
+@define-color scrollbar_slider			#686A6F;
+@define-color bar_background			#151515;
+@define-color bar_foreground			#CFDAE7;
+@define-color bar_button_background		#34373F;
+@define-color bar_button_foreground		#BAC3CF;
+@define-color window_top_line			#151515;
+@define-color window_borders			#151515;
+@define-color tooltip_background		#000000;
+@define-color tooltip_foreground		#CFCFCF;
+@define-color terminal_background		#000000;
+@define-color terminal_foreground		#CFCFCF;
+@define-color filemanager_foreground		#4C515C;
+@define-color filemanager_background		#D0D0D0;
+@define-color imageviewer_background		#000000;
+@define-color gedit_background			#B7BBBB;
+@define-color gedit_foreground			#5C616C;
+@define-color gedit_content_background		#28282C;
+@define-color gedit_content_foreground		#CFCFCF;
+
+/* ???? */
+@define-color theme_fg_color #5C616C;
+@define-color theme_text_color #5C616C;
+@define-color theme_bg_color #F5F6F7;
+@define-color theme_base_color #FFFFFF;
+@define-color theme_selected_bg_color @main_color;
+@define-color theme_selected_fg_color @main_color_contrast;
+@define-color fg_color #5C616C;
+@define-color text_color #5C616C;
+@define-color bg_color @general_background;
+@define-color base_color @general_foreground;
+@define-color selected_bg_color @main_color;
+@define-color selected_fg_color @main_color_contrast;
+@define-color insensitive_bg_color #FBFBFC;
+@define-color insensitive_fg_color alpha(#5C616C, 0.5);
+@define-color insensitive_base_color #FFFFFF;
+@define-color theme_unfocused_fg_color #5C616C;
+@define-color theme_unfocused_text_color #5C616C;
+@define-color theme_unfocused_bg_color #F5F6F7;
+@define-color theme_unfocused_base_color #FFFFFF;
+@define-color borders #DCDFE3;
+@define-color unfocused_borders #DCDFE3;
+@define-color warning_color #F27835;
+@define-color error_color #FC4138;
+@define-color success_color #73D216;
+@define-color placeholder_text_color #A8A8A8;
+@define-color link_color #2679DB;
+@define-color content_view_bg #FFFFFF;
+@define-color wm_title alpha(#CFDAE7, 0.8);
+@define-color wm_unfocused_title alpha(#CFDAE7, 0.5);
+@define-color wm_bg @bar_background;
+@define-color wm_bg_unfocused #323843;
+@define-color wm_highlight #363B48;
+@define-color wm_shadow alpha(black, 0.35);
+@define-color wm_button_close_bg #CC575D;
+@define-color wm_button_close_hover_bg #D7787D;
+@define-color wm_button_close_active_bg #BE3841;
+@define-color wm_icon_close_bg #1A1F1A;
+@define-color wm_button_hover_bg #454C5C;
+@define-color wm_button_active_bg @main_color;
+@define-color wm_button_hover_border #262932;
+@define-color wm_icon_bg #90939B;
+@define-color wm_icon_unfocused_bg #666A74;
+@define-color wm_icon_hover_bg #C4C7CC;
+@define-color wm_icon_active_bg @main_color_contrast;
+
+@import url("general.css");
+@import url("general-assets.css");
+
+@import url("file-managers.css");
+@import url("gedit.css");
+@import url("terminals.css");
+@import url("unity.css");
+
+

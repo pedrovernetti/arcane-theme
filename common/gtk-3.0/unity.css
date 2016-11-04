@@ -1,0 +1,161 @@
+
+UnityDecoration
+{
+	-UnityDecoration-extents: 28px 1 1 1;
+	-UnityDecoration-input-extents: 10px;
+	-UnityDecoration-shadow-offset-x: 1px;
+	-UnityDecoration-shadow-offset-y: 5px;
+	-UnityDecoration-active-shadow-color: alpha(black, 0.75);
+	-UnityDecoration-active-shadow-radius: 30px;
+	-UnityDecoration-inactive-shadow-color: alpha(black, 0.7);
+	-UnityDecoration-inactive-shadow-radius: 25px;
+	-UnityDecoration-glow-size: 10px;
+	-UnityDecoration-glow-color: @main_color;
+	-UnityDecoration-title-indent: 10px;
+	-UnityDecoration-title-fade: 35px;
+	-UnityDecoration-title-alignment: 0.0;
+}
+UnityDecoration.top
+{
+	border: 0px solid @bar_background;
+	box-shadow: inset 0 1px 0 0 @window_top_line;
+	border-radius: 6px 6px 0 0;
+	padding: 3px 6px 3px 6px;
+	background-color: @bar_background;
+	background-image: none;
+	color: mix(@bar_foreground, @main_color_contrast, 0.5);
+}
+UnityDecoration.top:backdrop
+{
+	border-bottom-width: 0;
+	color: alpha(mix(@bar_foreground, @main_color_contrast, 0.5), 0.7);
+	box-shadow: none;
+}
+UnityDecoration.left,
+UnityDecoration.right,
+UnityDecoration.bottom,
+UnityDecoration.left:backdrop,
+UnityDecoration.right:backdrop,
+UnityDecoration.bottom:backdrop
+{
+	background-color: @window_borders;
+	background-image: none;
+}
+
+UnityPanelWidget,
+.unity-panel
+{
+	background-color: @bar_background;
+	background-image: none;
+	color: mix(@bar_foreground, @main_color_contrast, 0.5);
+	box-shadow: none;
+}
+UnityPanelWidget:backdrop,
+.unity-panel:backdrop
+{
+	color: alpha(mix(@bar_foreground, @main_color_contrast, 0.5), 0.7);
+}
+.unity-panel.menubar.menuitem:hover,
+.unity-panel.menubar .menuitem *:hover
+{
+	border-radius: 0;
+	color: @main_color_contrast;
+	background-color: alpha(@main_color, 0.2);
+	background-image: none;
+	border-bottom: none;
+}
+
+.lightdm.menu
+{
+	background-image: none;
+	background-color: rgba(0, 0, 0, 0.4);
+	border-color: rgba(255, 255, 255, 0.8);
+	border-radius: 4px;
+	padding: 1px;
+	color: white;
+}
+.lightdm-combo .menu
+{
+	background-color: rgba(64, 71, 86, 0.97);
+	border-radius: 0px;
+	padding: 0px;
+	color: white;
+}
+.lightdm.menu .menuitem *,
+.lightdm.menu .menuitem.check:active,
+.lightdm.menu .menuitem.radio:active
+{
+	color: white;
+}
+.lightdm.menubar
+{
+	color: rgba(255, 255, 255, 0.8);
+	background-image: none;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.lightdm.menubar > .menuitem
+{
+	padding: 2px 6px;
+}
+.lightdm-combo.combobox-entry .button,
+.lightdm-combo .cell,
+.lightdm-combo .button,
+.lightdm-combo .entry,
+.lightdm.button,
+.lightdm.entry
+{
+	background-image: none;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-color: rgba(255, 255, 255, 0.4);
+	border-radius: 10px;
+	padding: 7px;
+	color: white;
+	text-shadow: none;
+}
+.lightdm.button,
+.lightdm.button:hover,
+.lightdm.button:active,
+.lightdm.button:active:focused,
+.lightdm.entry,
+.lightdm.entry:hover,
+.lightdm.entry:active,
+.lightdm.entry:active:focused
+{
+	background-image: none;
+	border-image: none;
+}
+.lightdm.button:focused,
+.lightdm.entry:focused
+{
+	border-color: rgba(255, 255, 255, 0.1);
+	border-width: 1px;
+	border-style: solid;
+	color: white;
+}
+.lightdm.entry:selected
+{
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.lightdm.entry:active
+{
+	-gtk-icon-source: -gtk-icontheme("process-working-symbolic");
+	animation: dashentry_spinner 1s infinite linear;
+}
+.lightdm.option-button
+{
+	padding: 2px;
+	background: none;
+	border: 0;
+}
+.lightdm.toggle-button
+{
+	background: none;
+	border-width: 0;
+}
+.lightdm.toggle-button.selected
+{
+	background-color: rgba(0, 0, 0, 0.7);
+	border-width: 1px;
+}
+
+

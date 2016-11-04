@@ -1,0 +1,252 @@
+
+GeditNotebook.notebook.header.top,
+GeditNotebook.notebook.header.bottom,
+GeditNotebook.notebook.header.right,
+GeditNotebook.notebook.header.left
+{
+	box-shadow: none;
+	border-bottom: 1px solid @gedit_background;
+}
+GeditNotebook.notebook tab.reorderable-page.top:hover,
+GeditNotebook.notebook tab.reorderable-page.top.prelight-page,
+GeditNotebook.notebook tab.top:hover,
+GeditNotebook.notebook tab.top.prelight-page
+{
+	border-bottom: 1px solid @gedit_background;
+	background-color: mix(@gedit_background, @bar_background, 0.2);
+}
+GeditNotebook.notebook.header { background-color: @bar_background; }
+GeditNotebook.notebook tab GtkLabel { color: alpha(#AAB2C2, 0.55); }
+GeditNotebook.notebook tab.reorderable-page.top:active,
+GeditNotebook.notebook tab.reorderable-page.top.active-page,
+GeditNotebook.notebook tab.reorderable-page.top.active-page:hover,
+GeditNotebook.notebook tab.top:active,
+GeditNotebook.notebook tab.top.active-page,
+GeditNotebook.notebook tab.top.active-page:hover
+{
+	box-shadow: none;
+	background-color: @gedit_background;
+}
+
+GeditNotebook.notebook.arrow { color: rgba(170, 178, 194, 0.55); }
+GeditNotebook.notebook.arrow:hover { color: rgba(90, 98, 114, 0.775); }
+GeditNotebook.notebook.arrow:active { color: #5C616C; }
+GeditNotebook.notebook.arrow:insensitive { color: rgba(70, 78, 94, 0.25); }
+
+.gedit-headerbar-paned { color: rgba(38, 42, 51, 0.97); }
+
+.gedit-document-panel .list-row .button
+{
+	color: transparent;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+	padding: 4px;
+}
+.gedit-document-panel .list-row .button GtkImage { color: inherit; }
+
+.gedit-document-panel .prelight-row .button { color: #92959D; }
+
+.gedit-document-panel .list-row .button:hover,
+.gedit-document-panel .prelight-row .button:hover
+{
+	color: #FF4D4D;
+}
+
+.gedit-document-panel .prelight-row:selected .button:hover
+{
+	color: #FF6666;
+	background-image: none;
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+.gedit-document-panel .prelight-row:selected .button:hover:active { color: #FFFFFF; }
+
+.gedit-document-panel .prelight-row .button:active { color: #5C616C; }
+
+.gedit-document-panel-dragged-row
+{
+	border: 1px solid @general_borders;
+	background-color: #D9DDE0;
+	color: #5C616C;
+}
+
+GeditStatusbar
+{
+	border-top: 1px solid @gedit_background;
+	color: @gedit_foreground;
+	background-color: @gedit_background;
+}
+
+GeditStatusMenuButton.button.flat,
+GeditStatusMenuButton.sidebar-button.button,
+GeditStatusMenuButton:prelight.button.flat,
+GeditStatusMenuButton.sidebar-button.button:prelight,
+GeditStatusMenuButton:checked.button.flat,
+GeditStatusMenuButton.sidebar-button.button:checked
+{
+	border-bottom-style: none;
+	border-radius: 0;
+}
+
+GeditFileBrowserWidget .toolbar, 
+GeditFileBrowserWidget .inline-toolbar
+{
+	border-bottom: 1px solid @general_borders;
+}
+
+.gedit-map-frame { border-color: rgba(black, 0.3); }
+
+.gedit-search-entry-occurrences-tag 
+{
+	color: rgba(92, 97, 108, 0.6);
+	border: none;
+	margin: 2px;
+	padding: 2px;
+}
+
+GeditViewFrame .view
+{
+	color: @gedit_content_foreground;
+	background: @gedit_content_background;
+}
+
+GeditViewFrame .gedit-search-slider 
+{
+	background-color: #FBFBFC;
+	padding: 6px;
+	border-color: @general_borders;
+	border-radius: 0 0 2px 2px;
+	border-width: 0 1px 1px 1px;
+	border-style: solid;
+}
+
+
+GeditWindow.background.csd > .titlebar .pane-separator,
+GeditWindow.background.csd.maximized > .titlebar .pane-separator,
+GeditWindow.background.csd > .titlebar .pane-separator:backdrop,
+GeditWindow.background.csd.maximized > .titlebar .pane-separator:backdrop,
+GeditWindow.background.csd > .titlebar > GtkHeaderBar.header-bar.titlebar,
+GeditWindow.background.csd > .titlebar > GtkHeaderBar.header-bar.titlebar:backdrop,
+GeditWindow.background.csd.maximized > .titlebar > GtkHeaderBar.header-bar.titlebar
+{
+	background-color: @bar_background;
+}
+GeditWindow.background.csd > .titlebar { background-color: transparent; }
+
+GeditWindow.background.csd { background-color: transparent; }
+
+GeditWindow.background .gedit-side-panel-paned .pane-separator
+{
+	background-color: rgba(53, 57, 69, 0.95);
+}
+
+GeditWindow.background .gedit-bottom-panel-paned .pane-separator
+{
+	background-color: @general_borders;
+}
+
+.gedit-bottom-panel-paned { background-color: #FFFFFF; }
+
+.gedit-document-panel { background-color: rgba(53, 57, 69, 0.95); }
+.maximized .gedit-document-panel { background-color: #2C2F3A; }
+.gedit-document-panel .list-row { color: mix(@bar_foreground, gray, 0.24); }
+.gedit-document-panel .list-row
+{
+	background-color: transparent;
+	border: solid transparent;
+	border-width: 3px 2px 3px 2px;
+}
+.gedit-document-panel .list-row:hover 
+{
+	border: solid rgba(186, 195, 207, 0.15);
+	border-width: 3px 2px 3px 2px;
+	background-color: rgba(186, 195, 207, 0.15);
+}
+.gedit-document-panel .list-row:active
+{
+	color: @main_color_contrast;
+	background-color: @main_color;
+	border: solid @main_color;
+	border-width: 3px 2px 3px 2px;
+}
+.gedit-document-panel .list-row:active .button { color: @main_color_contrast; }
+.gedit-document-panel .list-row:selected, 
+.gedit-document-panel .list-row:selected:hover 
+{
+	color: @main_color_contrast;
+	background-color: @main_color;
+	border: solid @main_color;
+	border-width: 3px 2px 3px 2px; 
+}
+.gedit-document-panel .prelight-row .button:active { color: @bar_button_foreground; }
+
+GeditWindow GtkPaned { -GtkPaned-handle-size: 0; }
+GeditWindow GtkPaned .frame
+{
+	border: none;
+	background-color: transparent;
+}
+GeditWindow GtkPaned .frame .button { border: 1px solid @main_color; }
+
+GeditFileBrowserWidget { background-color: rgba(53, 57, 69, 0.95); }
+.maximized GeditFileBrowserWidget { background-color: #353945; }
+GeditFileBrowserWidget .horizontal
+{
+	background-color: transparent;
+	border-color: rgba(37, 40, 49, 0.95);
+}
+GeditFileBrowserWidget .horizontal GtkComboBox { color: mix(@bar_foreground, gray, 0.24); }
+
+GeditWindow.background.csd GeditFileBrowserView.view
+{
+	background-color: transparent;
+	color: mix(@bar_foreground, gray, 0.24);
+}
+GeditWindow.background.csd GeditFileBrowserView.view.expander { color: mix(@bar_foreground, gray, 0.24);}
+GeditWindow.background.csd GeditFileBrowserView.view.expander:hover { color: @main_color; }
+
+GeditFileBrowserWidget .horizontal .button
+{
+	color: @bar_button_foreground;
+	outline-color: alpha(@bar_button_foreground, 0.3);
+	border-color: rgba(26, 28, 34, 0.35);
+	background-color: rgba(102, 109, 132, 0.35);
+}
+GeditFileBrowserWidget .horizontal .button:hover
+{
+	color: #BAC3CF;
+	outline-color: alpha(@bar_button_foreground, 0.3);
+	border-color: rgba(26, 28, 34, 0.35);
+	background-color: rgba(119, 127, 151, 0.45);
+}
+GeditFileBrowserWidget .horizontal .button:active,
+GeditFileBrowserWidget .horizontal .button:checked
+{
+	color: @main_color_contrast;
+	outline-color: alpha(@main_color_contrast, 0.3);
+	border-color: rgba(26, 28, 34, 0.35);
+	background-color: @main_color;
+}
+GeditFileBrowserWidget .horizontal .button:insensitive
+{
+	color: #5D626E;
+	border-color: rgba(26, 28, 34, 0.35);
+	background-color: rgba(102, 109, 132, 0.2);
+}
+GeditFileBrowserWidget .overlay-indicator.scrollbar:not(.dragging):not(.hovering) .slider
+{
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+GeditFileBrowserWidget .scrollbar .trough
+{
+	background-color: rgba(0, 0, 0, 0.2);
+	border: none;
+}
+GeditFileBrowserWidget .scrollbar .slider { background-color: rgba(231, 234, 238, 0.7); }
+GeditFileBrowserWidget .scrollbar .slider:hover { background-color: #F6F7F9; }
+GeditFileBrowserWidget .scrollbar .slider:prelight:active { background-color: @main_color; }
+GeditFileBrowserWidget .scrollbar .slider:insensitive { background-color: transparent; }
+
+
