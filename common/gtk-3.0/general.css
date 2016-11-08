@@ -2,7 +2,7 @@
 *
 {
 	background-clip: padding-box;
-	-GtkToolButton-icon-spacing: 4;
+	-GtkToolButton-icon-spacing: 6px;
 	-GtkTextView-error-underline-color: #FC4138;
 	-GtkCheckButton-indicator-size: 16;
 	-GtkCheckMenuItem-indicator-size: 16;
@@ -22,7 +22,7 @@
 	-GtkWidget-focus-line-width: 1;
 	-GtkWidget-text-handle-width: 20;
 	-GtkWidget-text-handle-height: 20;
-	-GtkDialog-button-spacing: 4;
+	-GtkDialog-button-spacing: 6px;
 	-GtkDialog-action-area-border: 0;
 	-GtkStatusbar-shadow-type: none;
 	outline-color: alpha(#5C616C, 0.3);
@@ -289,7 +289,7 @@ GtkSearchEntry.entry { border-radius: 20px; }
 {
 	transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 	border: 1px solid;
-	border-radius: 3px;
+	border-radius: 3px; /* TODO: square buttons... maybe? */
 	padding: 5px 8px;
 	color: @button_foreground;
 	outline-color: alpha(@button_foreground, 0.3);
@@ -1294,7 +1294,7 @@ GtkComboBox.combobox-entry .button:dir(rtl)
 .header-bar
 {
 	padding: 5px 5px 4px 5px;
-	border-width: 0 0 0px;
+	border-width: 0px 0px 0px;
 	border-style: solid;
 	border-radius: 0;
 	border-color: @bar_background;
@@ -1303,7 +1303,7 @@ GtkComboBox.combobox-entry .button:dir(rtl)
 }
 .csd .header-bar
 {
-	background-color: alpha(#232833, 0.97);
+	background-color: purple;
 	border-color: alpha(#262A33, 0.97);
 }
 .header-bar:backdrop { color: alpha(@bar_foreground, 0.5); }
@@ -2256,7 +2256,7 @@ column-header .button:insensitive { opacity: 0.6; }
 {
 	padding: 2px;
 	border: 1px solid alpha(@general_foreground, 0.3);
-	border-radius: 7px;
+	border-radius: 0px;
 	background-clip: border-box;
 	background-color: @general_background;
 	box-shadow: 0 2px 6px 1px alpha(black, 0.07);
@@ -2335,8 +2335,7 @@ column-header .button:insensitive { opacity: 0.6; }
 {
 	padding-top: 5px;
 	border-radius: 12px 12px 0 0;
-	border-width: 0;
-	border-top-width: 2px;
+	border-width: 2px 1px 0px 1px;
 	border-color: transparent;
 	margin-left: 2px;
 	margin-right: 2px;
@@ -2367,8 +2366,7 @@ column-header .button:insensitive { opacity: 0.6; }
 {
 	padding-bottom: 6px;
 	border-radius: 0 0 12px 12px;
-	border-width: 0;
-	border-bottom-width: 2px;
+	border-width: 0px 1px 2px 1px;
 	border-color: transparent;
 	margin-left: 2px;
 	margin-right: 2px;
@@ -2399,8 +2397,7 @@ column-header .button:insensitive { opacity: 0.6; }
 {
 	padding-right: 17px;
 	border-radius: 0 12px 12px 0;
-	border-width: 0;
-	border-right-width: 2px;
+	border-width: 1px 2px 1px 0px;
 	border-color: transparent;
 	background-color: alpha(#C7CBCB, 0.1);
 }
@@ -2429,8 +2426,7 @@ column-header .button:insensitive { opacity: 0.6; }
 {
 	padding-left: 17px;
 	border-radius: 12px 0 0 12px;
-	border-width: 0;
-	border-left-width: 2px;
+	border-width: 1px 0px 1px 2px;
 	border-color: transparent;
 	background-color: alpha(#C7CBCB, 0.1);
 }

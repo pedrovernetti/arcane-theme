@@ -26,10 +26,16 @@ NautilusWindow .scrollbar:hover .trough
 	background-color: alpha(@filemanager_foreground, 0.2);
 }
 
-TerminalWindow .notebook.header.top,
-TerminalWindow .notebook.header.bottom,
-TerminalWindow .notebook.header.right,
-TerminalWindow .notebook.header.left
+NautilusWindow .header-bar
+{
+	border-width: 0px 0px 3px 0px;
+	border-style: solid;
+	border-color: @bar_background;
+}
+NautilusWindow .notebook.header.top,
+NautilusWindow .notebook.header.bottom,
+NautilusWindow .notebook.header.right,
+NautilusWindow .notebook.header.left
 {
 	box-shadow: none;
 }
@@ -97,7 +103,7 @@ NemoWindow .primary-toolbar NemoPathBar.linked:not(.vertical):not(.path-bar) > .
 .nemo-desktop.nemo-canvas-item
 {
 	color: @main_color_contrast;
-	text-shadow: 1px 1px rgba(0, 0, 0, 0.6);
+	text-shadow: 1px 1px alpha(black, 0.6);
 }
 .nautilus-desktop.nautilus-canvas-item:active,
 .nemo-desktop.nemo-canvas-item:active
@@ -266,7 +272,7 @@ NautilusWindow .list.sidebar
 GtkFileChooserDialog GtkPlacesSidebar.sidebar,
 NautilusWindow GtkPlacesSidebar.sidebar
 {
-	background-color: rgba(53, 57, 69, 0.95);
+	background-color: @sidebar_background;
 }
 GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-placeholder-row.list-row.activatable,
 NautilusWindow GtkPlacesSidebar.sidebar .sidebar-placeholder-row.list-row.activatable
@@ -357,7 +363,7 @@ NautilusWindow GtkPlacesSidebar.sidebar .view.separator
 GtkFileChooserDialog.maximized GtkPlacesSidebar.sidebar,
 NautilusWindow.maximized GtkPlacesSidebar.sidebar
 {
-	background-color: #2C2F3A;
+	background-color: @sidebar_background;
 }
 
 NemoWindow GtkEventBox { background-color: @main_contrast_color; }
@@ -378,7 +384,7 @@ NemoWindow .source-list.sidebar.view,
 MarlinViewWindow .sidebar,
 MarlinViewWindow .source-list.sidebar.view
 {
-	background-color: rgba(53, 57, 69, 0.95);
+	background-color: alpha(@sidebar_background, 0.95);
 }
 NemoWindow .sidebar .view,
 NemoWindow .sidebar row,
@@ -440,7 +446,7 @@ MarlinViewWindow.maximized .sidebar
 NemoWindow.background > GtkGrid > GtkPaned > .pane-separator,
 MarlinViewWindow.background > GtkBox > GtkPaned > .pane-separator
 {
-	background-color: rgba(53, 57, 69, 0.95);
+	background-color: alpha(@sidebar_background, 0.95);
 }
 
 NautilusWindow NautilusWindowSlot { background-color: @FFFFFF; }

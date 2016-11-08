@@ -5,7 +5,7 @@ GeditNotebook.notebook.header.right,
 GeditNotebook.notebook.header.left
 {
 	box-shadow: none;
-	border-bottom: 1px solid @gedit_background;
+	border-bottom: 2px solid @gedit_background;
 }
 GeditNotebook.notebook tab.reorderable-page.top:hover,
 GeditNotebook.notebook tab.reorderable-page.top.prelight-page,
@@ -122,7 +122,6 @@ GeditViewFrame .gedit-search-slider
 	border-style: solid;
 }
 
-
 GeditWindow.background.csd > .titlebar .pane-separator,
 GeditWindow.background.csd.maximized > .titlebar .pane-separator,
 GeditWindow.background.csd > .titlebar .pane-separator:backdrop,
@@ -139,7 +138,7 @@ GeditWindow.background.csd { background-color: transparent; }
 
 GeditWindow.background .gedit-side-panel-paned .pane-separator
 {
-	background-color: rgba(53, 57, 69, 0.95);
+	background-color: alpha(#353945, 0.95);
 }
 
 GeditWindow.background .gedit-bottom-panel-paned .pane-separator
@@ -149,8 +148,7 @@ GeditWindow.background .gedit-bottom-panel-paned .pane-separator
 
 .gedit-bottom-panel-paned { background-color: #FFFFFF; }
 
-.gedit-document-panel { background-color: rgba(53, 57, 69, 0.95); }
-.maximized .gedit-document-panel { background-color: #2C2F3A; }
+.gedit-document-panel { background-color: @sidebar_background; }
 .gedit-document-panel .list-row { color: mix(@bar_foreground, gray, 0.24); }
 .gedit-document-panel .list-row
 {
@@ -190,8 +188,7 @@ GeditWindow GtkPaned .frame
 }
 GeditWindow GtkPaned .frame .button { border: 1px solid @main_color; }
 
-GeditFileBrowserWidget { background-color: rgba(53, 57, 69, 0.95); }
-.maximized GeditFileBrowserWidget { background-color: #353945; }
+GeditFileBrowserWidget { background-color: alpha(#353945, 0.95); }
 GeditFileBrowserWidget .horizontal
 {
 	background-color: transparent;

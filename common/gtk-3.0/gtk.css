@@ -45,6 +45,8 @@
 @define-color bar_foreground			#CFDAE7;
 @define-color bar_button_background		#34373F;
 @define-color bar_button_foreground		#BAC3CF;
+@define-color sidebar_background		#3E424E;
+@define-color sidebar_foreground		#CFDAE7;
 @define-color window_top_line			#151515;
 @define-color window_borders			#151515;
 @define-color tooltip_background		#000000;
